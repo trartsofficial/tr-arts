@@ -1,3 +1,9 @@
+    html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
     * {
       margin: 0;
       padding: 0;
@@ -247,95 +253,6 @@
 .slide{
   border-radius:40px;
 }
-
-    .floating-circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      animation: float 6s infinite ease-in-out;
-    }
-
-    .circle1 {
-      width: 140px;
-      height: 140px;
-      top: 10%;
-      left: -50px;
-    }
-
-    .circle2 {
-      width: 200px;
-      height: 200px;
-      bottom: -60px;
-      right: -80px;
-      animation-delay: 2s;
-    }
-
-    .floating-triangle{
-
-  position:absolute;
-
-  width:180px;
-  height:180px;
-
-  clip-path:polygon(
-    50% 0%,
-    100% 100%,
-    0% 100%
-  );
-
-  border-radius:30px;
-
-  opacity:0.12;
-
-  filter:blur(2px);
-
-  animation:floatTriangle 8s ease-in-out infinite;
-}
-
-.triangle1{
-
-  background:#33bfbf;
-
-  top:15%;
-
-  right:8%;
-}
-
-.triangle2{
-
-  background:#3334bf;
-
-  bottom:10%;
-
-  left:5%;
-
-  animation-delay:3s;
-}
-
-@keyframes floatTriangle{
-
-  0%,100%{
-    transform:
-    translateY(0px)
-    rotate(0deg);
-  }
-
-  50%{
-    transform:
-    translateY(-25px)
-    rotate(8deg);
-  }
-}
-
-    @keyframes float {
-      0%,100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-
     footer {
       text-align: center;
       padding: 30px;
