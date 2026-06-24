@@ -906,3 +906,44 @@ footer p{
 
   margin:auto;
 }
+@media (max-width:768px){
+
+  body{
+    padding:12px;
+  }
+
+  .hero,
+  .portfolio,
+  .platforms,
+  .reviews,
+  .features-section{
+
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .portfolio-title,
+  .platform-title,
+  .review-title{
+
+    text-align:center;
+  }
+
+  .hero{
+
+    padding:40px 20px;
+
+    border-radius:0 0 30px 30px;
+  }
+
+  .hero-text{
+
+    max-width:100%;
+  }
+
+  .image-card{
+
+    max-width:100%;
+  }
+
+}
