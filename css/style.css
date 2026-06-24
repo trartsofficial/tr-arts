@@ -907,3 +907,22 @@ footer p{
   }
 
 }
+@media(max-width:768px){
+
+  .portfolio-image{
+
+    aspect-ratio:1/1 !important;
+
+    height:auto !important;
+  }
+
+  .portfolio-image img{
+
+    width:100%;
+
+    height:100% !important;
+
+    object-fit:cover;
+  }
+
+}
