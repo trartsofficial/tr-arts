@@ -467,26 +467,21 @@
     0 20px 40px rgba(0,0,0,0.35);
 }
 
-    .portfolio-image{
-
-  width:100%;
-
-  overflow:hidden;
-
-  border-radius:20px;
-
-  background:#3d3964;
-
-  border-top:3px solid #33bfbf;
-
-  border-left:1px solid #5f60ff;
-
-  border-right:1px solid #5f60ff;
-
-  border-bottom:1px solid #5f60ff;
-
-  margin-bottom:18px;
-}
+    .portfolio-image {
+      width: 100%;
+      height: 180px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.08);
+      border: 2px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+      color: #33bfbf;
+    }
 
     .portfolio-card h3 {
       margin-bottom: 10px;
@@ -545,13 +540,11 @@
 
   width:100%;
 
-  display:block;
-
-  aspect-ratio:1/1;
+  height:100%;
 
   object-fit:cover;
 
-  border-radius:16px;
+  border-radius:18px;
 }
 .social-buttons{
   display:flex;
@@ -916,6 +909,7 @@ footer p{
 
   margin:auto;
 }
+
 @media (max-width:768px){
 
   body{
@@ -976,46 +970,23 @@ footer p{
   }
 
 }
-
-}
 @media(max-width:768px){
 
-  .portfolio-grid{
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-    gap:16px;
+  body{
+    padding:12px;
   }
-
-  .portfolio-image img{
-
-    aspect-ratio:1/1;
-  }
-
-}
-@media(max-width:768px){
 
   .hero{
-
-    min-height:auto;
-
-    padding:30px 20px;
+    padding:40px 20px;
   }
 
-  .hero-image{
+  .portfolio,
+  .platforms,
+  .reviews,
+  .features-section{
 
-    margin-bottom:10px;
-  }
-
-}
-
-}
-@media(max-width:768px){
-
-  .portfolio-title h2{
-
-    font-size:2.2rem;
+    padding-left:0;
+    padding-right:0;
   }
 
 }
