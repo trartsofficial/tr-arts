@@ -1,3 +1,9 @@
+    html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
     * {
       margin: 0;
       padding: 0;
@@ -36,6 +42,9 @@
     }
 
     header {
+      max-width:1500px;
+      margin:auto;
+      margin-bottom:0px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -106,15 +115,16 @@
 
   gap:70px;
 
-  padding:90px 8%;
+  padding:70px 6%;
 
   max-width:1500px;
-  margin:auto;
+  margin:0 auto;
 
   background:#07051b;
 
-  border-radius:0 0 40px 40px;
-
+  border-radius:40px;
+  border-top:3px solid #3334bf;
+  
   border-left:1px solid rgba(255,255,255,0.08);
   border-right:1px solid rgba(255,255,255,0.08);
   border-bottom:1px solid rgba(255,255,255,0.08);
@@ -244,95 +254,6 @@
 .slide{
   border-radius:40px;
 }
-
-    .floating-circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      animation: float 6s infinite ease-in-out;
-    }
-
-    .circle1 {
-      width: 140px;
-      height: 140px;
-      top: 10%;
-      left: -50px;
-    }
-
-    .circle2 {
-      width: 200px;
-      height: 200px;
-      bottom: -60px;
-      right: -80px;
-      animation-delay: 2s;
-    }
-
-    .floating-triangle{
-
-  position:absolute;
-
-  width:180px;
-  height:180px;
-
-  clip-path:polygon(
-    50% 0%,
-    100% 100%,
-    0% 100%
-  );
-
-  border-radius:30px;
-
-  opacity:0.12;
-
-  filter:blur(2px);
-
-  animation:floatTriangle 8s ease-in-out infinite;
-}
-
-.triangle1{
-
-  background:#33bfbf;
-
-  top:15%;
-
-  right:8%;
-}
-
-.triangle2{
-
-  background:#3334bf;
-
-  bottom:10%;
-
-  left:5%;
-
-  animation-delay:3s;
-}
-
-@keyframes floatTriangle{
-
-  0%,100%{
-    transform:
-    translateY(0px)
-    rotate(0deg);
-  }
-
-  50%{
-    transform:
-    translateY(-25px)
-    rotate(8deg);
-  }
-}
-
-    @keyframes float {
-      0%,100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-
     footer {
       text-align: center;
       padding: 30px;
@@ -358,7 +279,7 @@
 
   gap:24px;
 
-  padding:40px 8% 80px;
+  padding:40px 4% 80px;
 }
 
     .feature-box {
@@ -395,7 +316,7 @@
     }
 
     .portfolio {
-      padding: 40px 8% 80px;
+      padding: 40px 4% 80px;
     }
 
     .portfolio-title {
@@ -587,7 +508,7 @@
   font-size:1.2rem;
 }
 .platforms{
-  padding:40px 8% 80px;
+  padding:40px 4% 80px;
 }
 
 .platform-title{
@@ -739,7 +660,7 @@ footer p{
 
 .reviews{
 
-  padding:40px 8% 80px;
+  padding:40px 4% 80px;
 
   max-width:1500px;
 
@@ -905,4 +826,114 @@ footer p{
   max-width:1500px;
 
   margin:auto;
+}
+
+@media (max-width:768px){
+
+  body{
+    padding:12px;
+  }
+
+  .hero,
+  .portfolio,
+  .platforms,
+  .reviews,
+  .features-section{
+
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .portfolio-title,
+  .platform-title,
+  .review-title{
+
+    text-align:center;
+  }
+
+  .hero{
+
+    padding:40px 20px;
+
+    border-radius:0 0 30px 30px;
+  }
+
+  .hero-text{
+
+    max-width:100%;
+  }
+
+  .image-card{
+
+    max-width:100%;
+  }
+
+}
+@media(max-width:768px){
+
+  nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+  }
+
+  nav a{
+
+    margin-left:0;
+  }
+
+}
+@media(max-width:768px){
+
+  body{
+    padding:12px;
+  }
+
+  .hero{
+    padding:40px 20px;
+  }
+
+  .portfolio,
+  .platforms,
+  .reviews,
+  .features-section{
+
+    padding-left:0;
+    padding-right:0;
+  }
+
+}
+@media(max-width:768px){
+
+  .portfolio-image{
+
+    aspect-ratio:1/1 !important;
+
+    height:auto !important;
+  }
+
+  .portfolio-image img{
+
+    width:100%;
+
+    height:100% !important;
+
+    object-fit:cover;
+  }
+
+}
+.section-divider{
+
+  max-width:1500px;
+
+  margin:0 auto;
+
+  height:40px;
+
+  border-top:0px solid rgba(255, 255, 255, 0);
 }
