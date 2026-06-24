@@ -969,3 +969,13 @@ footer p{
   }
 
 }
+@media(max-width:768px){
+
+  .portfolio-image{
+
+    aspect-ratio:1/1;
+
+    height:auto;
+  }
+
+}
