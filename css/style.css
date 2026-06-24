@@ -44,7 +44,11 @@ body{
     header {
       max-width:1500px;
       margin:auto;
+<<<<<<< HEAD
       margin-bottom:0px;
+=======
+      margin-bottom:40px;
+>>>>>>> 1f7505eb24a35014262e40aee6bbde01deadd112
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -927,6 +931,7 @@ footer p{
   }
 
 }
+<<<<<<< HEAD
 .section-divider{
 
   max-width:1500px;
@@ -936,4 +941,6 @@ footer p{
   height:40px;
 
   border-top:0px solid rgba(255, 255, 255, 0);
-}
+}}
+=======
+>>>>>>> 1f7505eb24a35014262e40aee6bbde01deadd112
